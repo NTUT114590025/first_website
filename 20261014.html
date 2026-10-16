@@ -1,0 +1,223 @@
+<html>
+<head>
+<style>
+    .head_container .page{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .nav{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+    .top_container{
+        position: relative;
+        height: 540px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumqxkFGP-wtbrBQxgRtn4VX9fPQfaENq1abejkZWw5g&s=10");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+    .top_container .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            to right,
+            rgba(0,0,0,0.85),
+            rgba(0,0,0,0.1)
+
+        );
+    }
+    .top_content{
+        position: relative;
+        color: white;
+        padding: 60px;
+    }
+    .top_content h1{
+        font-size: 60px;
+    }
+    .s1 {
+  margin: 300px;
+  }
+  .s1 .content{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+  }
+  .s1 p{
+    font-size: large;
+  }
+  .s1 img {
+    width: 300px; 
+    height: auto;
+  }
+    .s2 {
+  margin: 300px;
+  }
+  .s2 .content{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+  }
+  .s2 p{
+    font-size: large;
+  }
+  .s2 img {
+    width: 300px; 
+    height: auto;
+  }
+    .s3 {
+  margin: 150px;
+  }
+  .s3 img {
+    width: 300px; 
+    height: auto;
+  }
+  .s3 .content{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+    position: relative;
+    width: 90%;
+  }
+  .s3 .box{
+    position: relative;   /* 讓內部的絕對定位基準以此為主 */
+      width: 300px;         /* 設定圖片固定寬度，可自行調整 */
+      height: auto;        /* 設定圖片固定高度，可自行調整 */
+      border-radius: 8px;   /* 圓角效果（選填） */
+      overflow: hidden;     /* 隱藏超出圓角的內容 */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .s3 .box2{
+    position: relative;   /* 讓內部的絕對定位基準以此為主 */
+      width: 300px;         /* 設定圖片固定寬度，可自行調整 */
+      height: auto;        /* 設定圖片固定高度，可自行調整 */
+      border-radius: 8px;   /* 圓角效果（選填） */
+      overflow: hidden;     /* 隱藏超出圓角的內容 */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .s3 .box3{
+    position: relative;   /* 讓內部的絕對定位基準以此為主 */
+      width: 300px;         /* 設定圖片固定寬度，可自行調整 */
+      height: auto;        /* 設定圖片固定高度，可自行調整 */
+      border-radius: 8px;   /* 圓角效果（選填） */
+      overflow: hidden;     /* 隱藏超出圓角的內容 */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.s3 .content .box2:hover .overlay2 {
+  opacity: 1;
+}
+.s3 .content .box3:hover .overlay3 {
+  opacity: 1;
+}
+.s3 .content .box:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header class="head_container" id="#top">
+    <div class="page">
+        <a href="#top">TOKYO.</a>
+        <ul class="nav">
+            <li><a href="#s1">Discover</a></li>
+            <li><a href="#s2">Neighborhoods</a></li>
+            <li><a href="#s3">Gallery</a></li>
+        </ul>
+    </div>
+</header>
+<section class="top_container">
+    <div class="overlay"></div>
+    <div class="top_content">
+        <h1>A City of contrasts.</h1>
+    </div>
+</section>
+<section class="s1" id="s1">
+    <h1>Where tradition meets tomorrow.</h1>
+    <div class="content">
+  <p>Tokyo is a city that never stops surprising you. One moment, you are surprised by bright and busy crossings. A few streets away,you might discover a quiet shrine hidden between modern building.</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUMKjmdp8tiE-lmIsGnQyX61WoaHTxc27J_RM_ifGTi4JizOuiN_2oF0&s=10">
+    </div>
+</section>
+<section class="s2" id="s2">
+    <h1>Where tradition meets tomorrow.</h1>
+    <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUMKjmdp8tiE-lmIsGnQyX61WoaHTxc27J_RM_ifGTi4JizOuiN_2oF0&s=10">
+  <p>Tokyo is a city that never stops surprising you. One moment, you are surprised by bright and busy crossings. A few streets away,you might discover a quiet shrine hidden between modern building.</p>
+    </div>
+</section>
+<section class="s3" id="s3">
+    <h1>Where tradition meets tomorrow.</h1>
+    <div class="content">
+        
+        <div class="box">
+            <div class="overlay"><div class="text">Hello World</div></div>
+            <img src="https://coupleinthekitchen.com/wp-content/uploads/2023/10/japan4-scaled.jpg">
+        </div>
+
+        <div class="box2">
+            <div class="overlay2"><div class="text">Hello World</div></div>
+            <img src="https://coupleinthekitchen.com/wp-content/uploads/2023/10/japan4-scaled.jpg">
+        </div>
+
+        <div class="box3">
+            <div class="overlay3"><div class="text">Hello World</div></div>
+            <img src="https://coupleinthekitchen.com/wp-content/uploads/2023/10/japan4-scaled.jpg">
+        </div>
+        
+    </div>
+</section>
+</body>
+</html>
