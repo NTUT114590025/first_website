@@ -1,15 +1,307 @@
 <html>
-    <head>
-        <style>
-            p {
-                width: 35%;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>The Quokka</h1>
-        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzXZD_ThL6cMG4Hrv8G9dHep0zrU_oiRS_mapiIg7JQ&s=10" align="right" height="110" weight="160">The quokka is a small marsupial native <br>to Australia. It is well known for its <br>friendly appearance and often looks <br>like it is smiling. Quokkas usually live <br>on islands and coastal areas, and they <br>are most active at night.</p>
-        <h2>Where They Live</h2>
-        <p><img src="https://ethnasia.com/cdn/shop/articles/sean-o-KMn4VEeEPR8-unsplash_edited.jpg?v=1621585619" align="left" height="110" weight="160">Quokkas are mainly found on <br>Rottnest Island and some other <br>nearby islands in Western <br>Australia. They live in bushland, <br>grasslands, and coastal areas <br>where there is plenty of food <br>and shelter.</p>
-    </body>
+<head>
+<style>
+    .head_container .page{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .nav{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+    .top_container{
+        position: relative;
+        height: 540px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumqxkFGP-wtbrBQxgRtn4VX9fPQfaENq1abejkZWw5g&s=10");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+    .top_container .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            to right,
+            rgba(0,0,0,0.85),
+            rgba(0,0,0,0.1)
+
+        );
+    }
+    .top_content{
+        position: relative;
+        color: white;
+        padding: 60px;
+    }
+    .top_content h1{
+        font-size: 60px;
+    }
+    .s1 {
+  margin: 300px;
+  }
+  .s1 .content{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+  }
+  .s1 p{
+    font-size: large;
+  }
+  .s1 img {
+    width: 300px; 
+    height: auto;
+  }
+    .s2 {
+  margin: 300px;
+  }
+  .s2 .content{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+  }
+  .s2 p{
+    font-size: large;
+  }
+  .s2 img {
+    width: 300px; 
+    height: auto;
+  }
+  .s3 {
+  margin: 300px;
+  }
+  .s3 p{
+    font-size: large;
+  }
+    .s4 {
+  margin: 150px;
+  }
+  .s4 img {
+    width: 300px; 
+    height: auto;
+  }
+  .s4 .content{
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+    position: relative;
+    width: 90%;
+  }
+  .s4 .box{
+    position: relative;   /* 讓內部的絕對定位基準以此為主 */
+      width: 300px;         /* 設定圖片固定寬度，可自行調整 */
+      height: auto;        /* 設定圖片固定高度，可自行調整 */
+      border-radius: 8px;   /* 圓角效果（選填） */
+      overflow: hidden;     /* 隱藏超出圓角的內容 */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .s4 .box2{
+    position: relative;   /* 讓內部的絕對定位基準以此為主 */
+      width: 300px;         /* 設定圖片固定寬度，可自行調整 */
+      height: auto;        /* 設定圖片固定高度，可自行調整 */
+      border-radius: 8px;   /* 圓角效果（選填） */
+      overflow: hidden;     /* 隱藏超出圓角的內容 */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .s4 .box3{
+    position: relative;   /* 讓內部的絕對定位基準以此為主 */
+      width: 300px;         /* 設定圖片固定寬度，可自行調整 */
+      height: auto;        /* 設定圖片固定高度，可自行調整 */
+      border-radius: 8px;   /* 圓角效果（選填） */
+      overflow: hidden;     /* 隱藏超出圓角的內容 */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.s4 .content .box2:hover .overlay2 {
+  opacity: 1;
+}
+.s4 .content .box3:hover .overlay3 {
+  opacity: 1;
+}
+.s4 .content .box:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+table {
+    width: 600px;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #aaaaaa; /* 先加上所有內框 */
+    padding: 8px;
+    text-align: left;
+}
+
+/* --- 以下為去除外框的魔法程式碼 --- */
+
+/* 1. 隱藏最左邊與最右邊的直線 */
+th:first-child, td:first-child { border-left: none; }
+th:last-child, td:last-child { border-right: none; }
+
+/* 2. 隱藏第一列的最上面橫線 */
+tr:first-child th, tr:first-child td { border-top: none; }
+
+/* 3. 隱藏最後一列的最下面橫線 */
+tr:last-child th, tr:last-child td { border-bottom: none; }
+</style>
+</head>
+<body>
+<header class="head_container" id="#top">
+    <div class="page">
+        <a href="#top">TOKYO.</a>
+        <ul class="nav">
+            <li><a href="#s1">Discover</a></li>
+            <li><a href="#s2">Neighborhoods</a></li>
+            <li><a href="#s3">Planner</a></li>
+            <li><a href="#s4">Gallery</a></li>
+        </ul>
+    </div>
+</header>
+<section class="top_container">
+    <div class="overlay"></div>
+    <div class="top_content">
+        <h1>A City of contrasts.</h1>
+    </div>
+</section>
+<section class="s1" id="s1">
+    <h1>Where tradition meets tomorrow.</h1>
+    <div class="content">
+  <p>Tokyo is a city that never stops surprising you. One moment, you are surprised by bright and busy crossings. A few streets away,you might discover a quiet shrine hidden between modern building.</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUMKjmdp8tiE-lmIsGnQyX61WoaHTxc27J_RM_ifGTi4JizOuiN_2oF0&s=10">
+    </div>
+</section>
+<section class="s2" id="s2">
+    <h1>Where tradition meets tomorrow.</h1>
+    <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUMKjmdp8tiE-lmIsGnQyX61WoaHTxc27J_RM_ifGTi4JizOuiN_2oF0&s=10">
+  <p>Tokyo is a city that never stops surprising you. One moment, you are surprised by bright and busy crossings. A few streets away,you might discover a quiet shrine hidden between modern building.</p>
+    </div>
+</section>
+<section class="s3" id="s3">
+    <h1>Three Days in Tokyo.</h1>
+    <p>plan your mornigs afternoons, and evenings with this simole three-day itinerary</p>
+    <table>
+        <tr bgcolor="black">
+            <th style="color: white;">Day</th>
+            <td style="color: white;">Morning</td>
+            <td style="color: white;">Afternoon</td>
+            <td style="color: white;">Evening</td>
+        </tr>
+        <tr>
+            <th bgcolor="#f1eee9" style="color: black;">Day 1</th>
+            <td>Asakusa Temple</td>
+            <td>Ueno Park</td>
+            <td>Shibuya</td>
+        </tr>
+        <tr>
+            <th bgcolor="#f1eee9" style="color: black;">Day 2</th>
+            <td bgcolor="#f9f7f1">Meiji Shrine</td>
+            <td bgcolor="#f9f7f1">Harajuku</td>
+            <td bgcolor="#f9f7f1">Shinjuku</td>
+        </tr>
+        <tr>
+            <th bgcolor="#f1eee9" style="color: black;">Day 3</th>
+            <td colspan="2" bgcolor="#f0e9e1" style="color: darkred; text-align: center; vertical-align: middle;">Tokyo DisneySea</td>
+            <td>Odaiba</td>
+        </tr>
+    </table>
+    <h2>Travel Budgel</h2>
+    <p>A sample budget for transportation and meals in Tokyo.</p>
+    <table>
+        <tr bgcolor="black">
+            <th style="color: white;">Category</th>
+            <td style="color: white;">item</td>
+            <td colspan="2" style="color: white;">Estimated Cost</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#f1eee9" style="color: black;">Transportation</th>
+            <td colspan="2">Metro</td>
+            <td style="text-align: right;">$1,000</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#f9f7f1">Train</td>
+            <td bgcolor="#f9f7f1" style="text-align: right;">$1,500</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#f1eee9" style="color: black;">Food</th>
+            <td colspan="2">Lunch</td>
+            <td style="text-align: right;">$1,200</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#f9f7f1">Dinner</td>
+            <td bgcolor="#f9f7f1" style="text-align: right;">$2,000</td>
+        </tr>
+    </table>
+</section>
+<section class="s4" id="s4">
+    <h1>Where tradition meets tomorrow.</h1>
+    <div class="content">
+        
+        <div class="box">
+            <div class="overlay"><div class="text">Hello World</div></div>
+            <img src="https://coupleinthekitchen.com/wp-content/uploads/2023/10/japan4-scaled.jpg">
+        </div>
+
+        <div class="box2">
+            <div class="overlay2"><div class="text">Hello World</div></div>
+            <img src="https://coupleinthekitchen.com/wp-content/uploads/2023/10/japan4-scaled.jpg">
+        </div>
+
+        <div class="box3">
+            <div class="overlay3"><div class="text">Hello World</div></div>
+            <img src="https://coupleinthekitchen.com/wp-content/uploads/2023/10/japan4-scaled.jpg">
+        </div>
+        
+    </div>
+</section>
+</body>
 </html>
